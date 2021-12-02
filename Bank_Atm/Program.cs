@@ -1,5 +1,6 @@
 ﻿using System;
-using Bank_Atm.Database;
+using Bank_Atm.View;
+using System.Threading;
 
 
 namespace Bank_Atm
@@ -10,8 +11,14 @@ namespace Bank_Atm
         {
 
             // Creates database connection
-            CreateDatabase connect = new CreateDatabase();
-            connect.DataBaseConnect();
+            //CreateDatabase connect = new CreateDatabase();
+            //connect.DataBaseConnect();
+
+            
+
+            DisplayMainMenu menu = new DisplayMainMenu();
+
+            menu.StartScreen();
 
 
         }
